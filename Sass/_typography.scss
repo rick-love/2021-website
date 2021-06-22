@@ -1,0 +1,55 @@
+////////////
+// HEADINGS
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 300;
+  &.heading {
+    &-lg {
+      font-size: 6rem;
+    }
+    &-sm {
+      margin-bottom: 2rem;
+      padding: 0.2rem 1rem;
+      background: rgba(lighten($color-primary, 2), 0.5);
+    }
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $color-secondary;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  &#home{
+      overflow: hidden;
+      h1{
+          margin-top: 20vh;
+      }
+  }
+
+  .icons {
+    margin-top: 1rem;
+    a {
+      padding: 0.4rem;
+      &:hover {
+        color: $color-secondary;
+        @include easeOut();
+      }
+    }
+  }
+}

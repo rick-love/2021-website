@@ -1,0 +1,57 @@
+// COLOR VARIABLES
+$color-primary: #444;
+
+$color-secondary: #eece1a;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+/////////////////////////
+// IMAGES
+$show-home-image: true;
+$home-image: url(../img/code1.jpg);
+$image-opacity: 0.9;
+
+
+/////////////////////////
+// FONT VARIABLES
+$font-primary: 'Noto Sans', sans-serif;
+
+
+/////////////////////////
+// Responsive Breakpoints
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+
+///////////////////////
+////////// GLOBAL RESET
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // SETS FONT SIZE 1rem = 10px  [10px / 16px (browser default value) = 62.5%]
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  @include background;
+  font-family: $font-primary;
+  background: $color-primary;
+  color: #fff;
+  line-height: 1.6;
+  height: 100vh;
+}
