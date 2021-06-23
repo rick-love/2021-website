@@ -30,20 +30,28 @@ header {
 .text-secondary {
   color: $color-secondary;
 }
+.text-red{
+  color: $color-red;
+}
 
 main {
   padding: 4rem;
   height: 100%;
 
+
   &#home{
-      overflow: hidden;
       h1{
           margin-top: 20vh;
       }
   }
 
-  .icons {
-    margin-top: 1rem;
+  .svg-icons {
+    margin-top: 2rem;
+    .icon{
+      width: $svg-icon-size;
+      height: $svg-icon-size;
+
+    }
     a {
       padding: 0.4rem;
       &:hover {

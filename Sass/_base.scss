@@ -2,6 +2,7 @@
 $color-primary: #444;
 
 $color-secondary: #eece1a;
+$color-red: rgb(233, 8, 8);
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
@@ -15,11 +16,10 @@ $show-home-image: true;
 $home-image: url(../img/code1.jpg);
 $image-opacity: 0.9;
 
-
 /////////////////////////
 // FONT VARIABLES
 $font-primary: 'Noto Sans', sans-serif;
-
+$svg-icon-size: 2.7rem;
 
 /////////////////////////
 // Responsive Breakpoints
@@ -54,4 +54,5 @@ body {
   color: #fff;
   line-height: 1.6;
   height: 100vh;
+  overflow: hidden;
 }
