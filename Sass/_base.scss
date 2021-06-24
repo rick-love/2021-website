@@ -21,13 +21,6 @@ $image-opacity: 0.9;
 $font-primary: 'Noto Sans', sans-serif;
 $svg-icon-size: 2.7rem;
 
-/////////////////////////
-// Responsive Breakpoints
-$bp-largest: 75em; // 1200px
-$bp-large: 62.5em; // 1000px
-$bp-medium: 50em; // 800px
-$bp-small: 37.5em; // 600px
-
 ///////////////////////
 ////////// GLOBAL RESET
 *,
@@ -41,17 +34,13 @@ $bp-small: 37.5em; // 600px
 html {
   box-sizing: border-box;
   font-size: 62.5%; // SETS FONT SIZE 1rem = 10px  [10px / 16px (browser default value) = 62.5%]
-
-  @media only screen and (max-width: $bp-largest) {
-    font-size: 50%;
-  }
 }
 
 body {
   @include background;
   font-family: $font-primary;
   background: $color-primary;
-  color: #fff;
+  color: set-text-color($color-primary);
   line-height: 1.6;
   height: 100vh;
   overflow: hidden;

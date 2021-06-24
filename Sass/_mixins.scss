@@ -4,7 +4,6 @@
 
 @mixin background {
   @if $show-home-image {
-      
     // BACKGROUND IMAGE
     &#bg-img {
       background: $home-image;
@@ -23,5 +22,39 @@
         background: rgba($color-primary, $image-opacity);
       }
     }
+  }
+}
+
+// SET TEXT COLOR
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+
+
+////////////////////////////////////////////////////////////////
+// MEDIA QUERY MIXINS
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769) and (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
