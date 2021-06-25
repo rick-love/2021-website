@@ -23,9 +23,10 @@
 <body>
     <!-- SVG SYMBOLS -->
     <!-- These are invisible on the page -->
-    <i data-fa-symbol="github" class="fab fa-github fa-2x"></i>
-    <i data-fa-symbol="linkedin" class="fab fa-linkedin fa-2x"></i>
-    <i data-fa-symbol="facebook" class="fab fa-facebook fa-2x"></i>
+    <i data-fa-symbol="email" class="fal fa-envelope-open-text fa-2x"></i>
+    <i data-fa-symbol="at" class="fal fa-at fa-2x"></i>
+    <i data-fa-symbol="whatsapp" class="fab fa-whatsapp fa-2x"></i>
+    <i data-fa-symbol="map-marker-smile" class="fal fa-map-marker-smile fa-2x"></i>
 
     <!-- NAVIGATION AND MENU BUTTON -->
     <div class="menu-btn">
@@ -59,16 +60,29 @@
 
         <div class="boxes">
             <div>
-                <span class="text-secondary">Email:</span>
-                email@outlook.com
+                <svg class="contact-icon text-secondary">
+                    <use xlink:href="#email"></use>
+                  </svg>
+                <span class="text-secondary">:</span>
+                ricklove
+                <svg class="contact-icon text-secondary">
+                    <use xlink:href="#at"></use>
+                  </svg> 
+                outlook.com
             </div>
             <div>
-                <span class="text-secondary">Phone:</span>
+                <svg class="contact-icon text-secondary">
+                    <use xlink:href="#whatsapp"></use>
+                  </svg>
+                <span class="text-secondary">:</span>
                 (+49) 555-5555
             </div>
             <div>
-                <span class="text-secondary">Address:</span>
-                1313 Mockingbird Lane
+                <svg class="contact-icon text-secondary">
+                    <use xlink:href="#map-marker-smile"></use>
+                  </svg>
+                <span class="text-secondary">:</span>
+                Ohmstr München DE 80802
             </div>
 
         </div>
