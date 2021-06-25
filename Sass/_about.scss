@@ -3,6 +3,7 @@
     display: grid;
     grid-template-areas:
       'bioImage bio bio'
+      'work work work'
       'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
@@ -16,6 +17,12 @@
     border: 3px solid $color-secondary;
   }
 }
+.work-history {
+  grid-area: work;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 
 .bio {
   grid-area: bio;
@@ -23,15 +30,26 @@
 }
 .job-card {
   background: lighten($color-primary, 5);
-  padding: 0.5rem;
   border-bottom: $color-secondary 3px solid;
+  padding: 1rem;
+  h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  h6 {
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
 }
 .job-1 {
-  grid-area: job1;
+  grid-area: job3;
 }
 .job-2 {
   grid-area: job2;
 }
 .job-3 {
-  grid-area: job3;
+  grid-area: job1;
 }
